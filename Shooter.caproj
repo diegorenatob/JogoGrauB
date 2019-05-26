@@ -8,7 +8,7 @@
     <author-website>http://www.perametade.com</author-website>
     <app-id>com.perametade.shooter</app-id>
     <unique-id>2e9nrozlnk5jy</unique-id>
-    <saved-with-version>23900</saved-with-version>
+    <saved-with-version>26500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
@@ -147,7 +147,7 @@
             </container>
             <animation-folder>
                 <animation framecount="2" loop="0" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="358723307806475" speed="0">
-                    <frame duration="1" hotspotX="0.515152" hotspotY="0.511628" original-source="D:\maciel\Maciel - Games PROJETOS\C2 Games - Projetos Reais\c2 multiplayer - topdown shooter\assets\hitman1_stand.png">
+                    <frame duration="1" hotspotX="0.515152" hotspotY="0.511628" original-source="C:\Users\rd_25\Documents\GitHub\JogoGrauB\Spites\Topdown_Shooter2\PNG\Man Blue\manBlue_stand.png">
                         <collision-poly>
                             <point x="0.181818" y="0.139535" />
                             <point x="0.484848" y="0" />
@@ -162,8 +162,18 @@
                     <frame duration="1" hotspotX="0.515152" hotspotY="0.511628" original-source="D:\maciel\Maciel - Games PROJETOS\C2 Games - Projetos Reais\c2 multiplayer - topdown shooter\assets\manRed_stand.png" />
                 </animation>
                 <animation framecount="2" loop="0" name="arma1" pingpong="0" repeatcount="1" repeatto="0" sid="883748797594573" speed="0">
-                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511628" original-source="D:\maciel\Maciel - Games PROJETOS\C2 Games - Projetos Reais\c2 multiplayer - topdown shooter\assets\hitman1_gun.png">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511628" original-source="C:\Users\rd_25\Documents\GitHub\JogoGrauB\Spites\Topdown_Shooter2\PNG\Man Blue\manBlue_machine.png">
                         <image-point name="fire" x="1.16327" y="0.697674" />
+                        <collision-poly>
+                            <point x="0.122449" y="0.139535" />
+                            <point x="0.489796" y="0.27907" />
+                            <point x="0.591837" y="0.465116" />
+                            <point x="0.591837" y="0.488372" />
+                            <point x="0.836735" y="0.813953" />
+                            <point x="0.489796" y="0.976744" />
+                            <point x="0.122449" y="0.860465" />
+                            <point x="0.0408163" y="0.488372" />
+                        </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.510204" hotspotY="0.511628" original-source="D:\maciel\Maciel - Games PROJETOS\C2 Games - Projetos Reais\c2 multiplayer - topdown shooter\assets\manRed_gun.png">
                         <image-point name="fire" x="1.16327" y="0.697674" />
