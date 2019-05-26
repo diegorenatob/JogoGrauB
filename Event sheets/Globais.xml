@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Globais</name>
+    <events>
+        <variable constant="1" name="GAME_ROOM_NAME" sid="191233552221458" static="0" type="text">MAIN</variable>
+        <variable constant="1" name="GAME_INSTANCE_NAME" sid="685458813514506" static="0" type="text">DEFAULT</variable>
+        <variable constant="1" name="GAME_NAME" sid="244865172866574" static="0" type="text">PERAMETADE_SHOOTER1</variable>
+        <variable constant="0" name="GAME_PLAYER_NAME" sid="582455611803649" static="0" type="text">Teste</variable>
+    </events>
+</c2eventsheet>
