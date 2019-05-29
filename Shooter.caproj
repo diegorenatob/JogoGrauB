@@ -449,9 +449,6 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
-        <object-type name="Audio" sid="604944494207988">
-            <plugin id="Audio" />
-        </object-type>
         <object-type name="UserMedia" sid="789519775975565">
             <plugin id="UserMedia" />
         </object-type>
@@ -460,6 +457,9 @@
         </object-type>
         <object-type name="Text" sid="981787127572958">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="125002856497830">
+            <plugin id="Audio" />
         </object-type>
     </object-folder>
     <families />
@@ -491,10 +491,10 @@
             </properties>
         </global-instance>
     </global-instances>
-    <sounds-folder />
-    <music-folder>
+    <sounds-folder>
         <file name="idiotsinspace.ogg" />
-    </music-folder>
+    </sounds-folder>
+    <music-folder />
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
