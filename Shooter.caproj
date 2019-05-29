@@ -10,6 +10,7 @@
     <unique-id>2e9nrozlnk5jy</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Multiplayer" version="1">Multiplayer</plugin>
@@ -19,6 +20,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="UserMedia" version="1">User Media</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -69,17 +71,17 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="12" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529343874623138" speed="0">
+                <animation framecount="27" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529343874623138" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\JogoGrauB\Spites\Topdown_Shooter2\PNG\Tiles\tile_120.png">
                         <collision-poly>
-                            <point x="0.121212" y="0.121212" />
-                            <point x="0.5" y="0.0151515" />
-                            <point x="0.863636" y="0.136364" />
-                            <point x="0.984848" y="0.5" />
-                            <point x="0.878788" y="0.878788" />
-                            <point x="0.5" y="0.984848" />
-                            <point x="0.121212" y="0.878788" />
-                            <point x="0.0151515" y="0.5" />
+                            <point x="0.13269" y="0.13269" />
+                            <point x="0.5" y="0.0298439" />
+                            <point x="0.852617" y="0.147383" />
+                            <point x="0.970156" y="0.5" />
+                            <point x="0.86731" y="0.86731" />
+                            <point x="0.5" y="0.970156" />
+                            <point x="0.13269" y="0.86731" />
+                            <point x="0.0298439" y="0.5" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.486486" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\JogoGrauB\Spites\Topdown_Shooter2\PNG\Tiles\tile_130.png">
@@ -158,6 +160,109 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\JogoGrauB\Spites\Topdown_Shooter2\PNG\Tiles\tile_123.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\JogoGrauB\Spites\Topdown_Shooter2\PNG\Tiles\tile_119.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\JogoGrauB\Spites\Topdown_Shooter2\PNG\Tiles\tile_120.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\JogoGrauB\Spites\Topdown_Shooter2\PNG\Tiles\tile_145.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\JogoGrauB\Spites\Topdown_Shooter2\PNG\Tiles\tile_118.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518072" original-source="C:\Users\rd_25\Documents\GitHub\NoNameGame\pixel_house_set_1.1\PNG\Bedroom\bed.png">
+                        <collision-poly>
+                            <point x="0.0384615" y="0.0361446" />
+                            <point x="0.5" y="0.0120482" />
+                            <point x="0.961538" y="0.0361446" />
+                            <point x="0.980769" y="0.518072" />
+                            <point x="0.942308" y="0.987952" />
+                            <point x="0.0576923" y="0.987952" />
+                            <point x="0.0192308" y="0.518072" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\NoNameGame\pixel_house_set_1.1\PNG\Bathroom\bath_tub.png">
+                        <collision-poly>
+                            <point x="0.030303" y="0.0588235" />
+                            <point x="0.5" y="0.0294118" />
+                            <point x="0.969697" y="0.0588235" />
+                            <point x="0.984848" y="0.970588" />
+                            <point x="0.0151515" y="0.970588" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\NoNameGame\pixel_house_set_1.1\PNG\Bathroom\sink.png">
+                        <collision-poly>
+                            <point x="0.0294118" y="0.0294118" />
+                            <point x="0.970588" y="0.0294118" />
+                            <point x="0.970588" y="0.5" />
+                            <point x="0.941176" y="0.941176" />
+                            <point x="0.5" y="0.970588" />
+                            <point x="0.0588235" y="0.941176" />
+                            <point x="0.0294118" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129" original-source="C:\Users\rd_25\Documents\GitHub\NoNameGame\pixel_house_set_1.1\PNG\Bathroom\toilet_bowl.png">
+                        <collision-poly>
+                            <point x="0.0384615" y="0.129032" />
+                            <point x="0.5" y="0.0322581" />
+                            <point x="0.961538" y="0.129032" />
+                            <point x="0.769231" y="0.516129" />
+                            <point x="0.769231" y="0.741935" />
+                            <point x="0.5" y="0.967742" />
+                            <point x="0.230769" y="0.741935" />
+                            <point x="0.230769" y="0.516129" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.578947" original-source="C:\Users\rd_25\Documents\GitHub\NoNameGame\pixel_house_set_1.1\PNG\Kitchen\Fridge\fridge.png">
+                        <collision-poly>
+                            <point x="0.0588235" y="0.0350877" />
+                            <point x="0.5" y="0.0175439" />
+                            <point x="0.941176" y="0.0350877" />
+                            <point x="0.970588" y="0.578947" />
+                            <point x="0.705882" y="0.982456" />
+                            <point x="0.294118" y="0.982456" />
+                            <point x="0.0294118" y="0.578947" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\NoNameGame\pixel_house_set_1.1\PNG\Kitchen\Kitchen Cabinets Stove\cabinet_01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\NoNameGame\pixel_house_set_1.1\PNG\Kitchen\Kitchen Cabinets Stove\cabinet_02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\NoNameGame\pixel_house_set_1.1\PNG\Kitchen\Kitchen Cabinets Stove\cabinet_03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\rd_25\Documents\GitHub\NoNameGame\pixel_house_set_1.1\PNG\Kitchen\Kitchen Cabinets Stove\sink.png">
+                        <collision-poly>
+                            <point x="0.366667" y="0.3" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.633333" y="0.3" />
+                            <point x="0.933333" y="0.5" />
+                            <point x="0.766667" y="0.9" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.233333" y="0.9" />
+                            <point x="0.0666667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.466667" original-source="C:\Users\rd_25\Documents\GitHub\NoNameGame\pixel_house_set_1.1\PNG\Kitchen\Decorations\decoration_03.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.0666667" />
+                            <point x="0.714286" y="0.0666667" />
+                            <point x="0.928571" y="0.466667" />
+                            <point x="0.75" y="0.933333" />
+                            <point x="0.25" y="0.933333" />
+                            <point x="0.0714286" y="0.466667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.482759" hotspotY="0.461538" original-source="C:\Users\rd_25\Documents\GitHub\NoNameGame\pixel_house_set_1.1\PNG\Kitchen\Decorations\decoration_02.png">
+                        <collision-poly>
+                            <point x="0.310345" y="0.0769231" />
+                            <point x="0.482759" y="0.153846" />
+                            <point x="0.586207" y="0.230769" />
+                            <point x="0.965517" y="0.461538" />
+                            <point x="0.689655" y="0.923077" />
+                            <point x="0.275862" y="0.923077" />
+                            <point x="0.0344828" y="0.461538" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.466667" original-source="C:\Users\rd_25\Documents\GitHub\NoNameGame\pixel_house_set_1.1\PNG\Kitchen\Decorations\decoration_03.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.0666667" />
+                            <point x="0.714286" y="0.0666667" />
+                            <point x="0.928571" y="0.466667" />
+                            <point x="0.75" y="0.933333" />
+                            <point x="0.25" y="0.933333" />
+                            <point x="0.0714286" y="0.466667" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -344,6 +449,18 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
+        <object-type name="Audio" sid="604944494207988">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="UserMedia" sid="789519775975565">
+            <plugin id="UserMedia" />
+        </object-type>
+        <object-type name="TextBox" sid="567630000176088">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Text" sid="981787127572958">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -359,6 +476,20 @@
         <global-instance type="Multiplayer" uid="5" />
         <global-instance type="Keyboard" uid="6" />
         <global-instance type="Mouse" uid="12" />
+        <global-instance type="Audio" uid="87">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />

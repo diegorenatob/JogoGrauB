@@ -84,8 +84,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>384</x>
-                        <y>184</y>
+                        <x>434</x>
+                        <y>320</y>
                         <z>0</z>
                         <width>150</width>
                         <height>22</height>
@@ -109,8 +109,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>295</x>
-                        <y>186</y>
+                        <x>345</x>
+                        <y>322</y>
                         <z>0</z>
                         <width>85</width>
                         <height>30</height>
@@ -131,8 +131,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>581</x>
-                        <y>194</y>
+                        <x>631</x>
+                        <y>330</y>
                         <z>0</z>
                         <width>80</width>
                         <height>46</height>
@@ -166,6 +166,33 @@
                         <z>0</z>
                         <width>549</width>
                         <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text" uid="88">
+                    <properties>
+                        <text>House of Murders</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Ninja Naruto,-64,400,0</font>
+                        <color>255,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>43</x>
+                        <y>43</y>
+                        <z>0</z>
+                        <width>680</width>
+                        <height>138</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
