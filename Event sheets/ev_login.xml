@@ -11,6 +11,12 @@
                 <action id="0" name="Set text" sid="347843355941380" type="txt_player_game">
                     <param id="0" name="Text">GAME_PLAYER_NAME</param>
                 </action>
+                <action id="0" name="Play" sid="131094616014891" type="Audio">
+                    <param id="0" name="Audio file">idiotsinspace</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">50</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="724366240404705">
