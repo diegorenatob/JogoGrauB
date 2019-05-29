@@ -138,6 +138,12 @@
                                     <param id="0" name="Group name">&quot;HOST&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
+                                <action id="0" name="Play" sid="252146496667103" type="Audio">
+                                    <param id="0" name="Audio file">idiotsinspace</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">30</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="565581210464785">
@@ -152,6 +158,12 @@
                                 <action id="-12" name="Set group active" sid="561150881493623" type="System">
                                     <param id="0" name="Group name">&quot;PEER&quot;</param>
                                     <param id="1" name="State">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="120508157719478" type="Audio">
+                                    <param id="0" name="Audio file">idiotsinspace</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">30</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
