@@ -15,6 +15,11 @@
                             <param id="1" name="Precision">3</param>
                             <param id="2" name="Interpolation">0</param>
                         </action>
+                        <action id="15" name="Add client input value" sid="430394770610274" type="Multiplayer">
+                            <param id="0" name="Tag">&quot;inputs2&quot;</param>
+                            <param id="1" name="Precision">3</param>
+                            <param id="2" name="Interpolation">0</param>
+                        </action>
                         <action id="11" name="Sync object" sid="165278270996814" type="Multiplayer">
                             <param id="0" name="Object">Player</param>
                             <param id="1" name="Data">3</param>
@@ -149,6 +154,9 @@
                         <event-block sid="565581210464785">
                             <conditions>
                                 <condition id="10" inverted="1" name="Is host" sid="977454303914521" type="Multiplayer" />
+                                <condition id="-11" name="For Each" sid="796092077411184" type="System">
+                                    <param id="0" name="Object">Player</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="689258256748415" type="MessagemGame">
@@ -252,7 +260,7 @@
                     <sub-events>
                         <event-block sid="572495685692631">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="944708811542879" type="Player">
+                                <condition disabled="1" id="-7" name="Compare instance variable" sid="944708811542879" type="Player">
                                     <param id="0" name="Instance variable">multiplayer_id</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">Multiplayer.MyID</param>
@@ -347,13 +355,13 @@
                         </event-block>
                         <event-block sid="392871705986698">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="916554468437182" type="Player">
-                                    <param id="0" name="Instance variable">multiplayer_id</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Value">Multiplayer.MyID</param>
-                                </condition>
                                 <condition id="-11" name="For Each" sid="948531872534660" type="System">
                                     <param id="0" name="Object">Player</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="916554468437182" type="Player">
+                                    <param id="0" name="Instance variable">multiplayer_id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Multiplayer.PeerID</param>
                                 </condition>
                             </conditions>
                             <actions>
