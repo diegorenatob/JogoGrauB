@@ -104,7 +104,7 @@
                             <param id="0" name="Game">GAME_NAME</param>
                             <param id="1" name="Instance">GAME_INSTANCE_NAME</param>
                             <param id="2" name="Room">GAME_ROOM_NAME</param>
-                            <param id="3" name="Max peers">2</param>
+                            <param id="3" name="Max peers">MAX_PEERS</param>
                         </action>
                     </actions>
                 </event-block>
@@ -352,6 +352,9 @@
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">Multiplayer.MyID</param>
                                 </condition>
+                                <condition id="-11" name="For Each" sid="948531872534660" type="System">
+                                    <param id="0" name="Object">Player</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-10" name="Set value" sid="499347477634178" type="Player">
@@ -483,7 +486,7 @@
                                     <param id="0" name="Object">Player</param>
                                 </action>
                                 <action id="5" name="Set frame" sid="952690250827200" type="Player">
-                                    <param id="0" name="Frame number">1</param>
+                                    <param id="0" name="Frame number">0</param>
                                 </action>
                                 <action id="-3" name="Set position" sid="107660945281382" type="cam">
                                     <param id="0" name="X">Player.X</param>
@@ -492,6 +495,16 @@
                                 <action behavior="Pin" id="0" name="Pin to object" sid="761283906747177" type="cam">
                                     <param id="0" name="Pin to">Player</param>
                                     <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="374332022727513">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="312088176765396" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="311976904122664" type="Player">
+                                    <param id="0" name="Frame number">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -531,7 +544,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="526580198884387" type="Player">
                                     <param id="0" name="Instance variable">multiplayer_id</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Multiplayer.myid</param>
+                                    <param id="2" name="Value">Multiplayer.PeerID</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -687,62 +700,6 @@
                                         <action id="14" name="Set client state" sid="773977388124058" type="Multiplayer">
                                             <param id="0" name="Tag">&quot;inputs&quot;</param>
                                             <param id="1" name="Value">Player.inputs</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="756673332398475">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="215675777060435" type="System">
-                                            <param id="0" name="First value">getbit(Player.inputs,0)</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Second value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="8Direction" id="7" name="Simulate control" sid="342919145853021" type="Player">
-                                            <param id="0" name="Control">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="849244201716225">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="707479902021629" type="System">
-                                            <param id="0" name="First value">getbit(Player.inputs,1)</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Second value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="8Direction" id="7" name="Simulate control" sid="970828506469050" type="Player">
-                                            <param id="0" name="Control">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="840520059886394">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="950900230073969" type="System">
-                                            <param id="0" name="First value">getbit(Player.inputs,2)</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Second value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="8Direction" id="7" name="Simulate control" sid="802756558564773" type="Player">
-                                            <param id="0" name="Control">3</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="801126461097694">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="890258967707284" type="System">
-                                            <param id="0" name="First value">getbit(Player.inputs,3)</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Second value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="8Direction" id="7" name="Simulate control" sid="958452512711030" type="Player">
-                                            <param id="0" name="Control">2</param>
                                         </action>
                                     </actions>
                                 </event-block>

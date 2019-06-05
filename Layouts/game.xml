@@ -2626,6 +2626,8 @@
                     <instance-variables>
                         <multiplayer_id></multiplayer_id>
                         <inputs>0</inputs>
+                        <inputs2>0</inputs2>
+                        <inputs3>0</inputs3>
                         <arma1>0</arma1>
                         <animacao>stand</animacao>
                     </instance-variables>

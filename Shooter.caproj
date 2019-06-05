@@ -275,6 +275,8 @@
             <instance-variables>
                 <instance-variable name="multiplayer_id" sid="842420400641366" type="string" />
                 <instance-variable name="inputs" sid="664466335345760" type="number" />
+                <instance-variable name="inputs2" sid="572110175557239" type="number" />
+                <instance-variable name="inputs3" sid="511505621110980" type="number" />
                 <instance-variable name="arma1" sid="514894680303843" type="number" />
                 <instance-variable name="animacao" sid="744631583247708" type="string" />
             </instance-variables>
