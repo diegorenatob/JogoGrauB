@@ -362,6 +362,12 @@
                                             <param id="0" name="Instance variable">multiplayer_id</param>
                                             <param id="1" name="Value">Player.multiplayer_id</param>
                                         </action>
+                                        <action id="0" name="Play" sid="750837807890639" type="Audio">
+                                            <param id="0" name="Audio file">pistol</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">25</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
