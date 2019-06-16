@@ -2626,10 +2626,11 @@
                     <instance-variables>
                         <multiplayer_id></multiplayer_id>
                         <inputs>0</inputs>
-                        <inputs2>0</inputs2>
-                        <inputs3>0</inputs3>
                         <arma1>0</arma1>
                         <animacao>stand</animacao>
+                        <health>100</health>
+                        <kills>0</kills>
+                        <deaths>0</deaths>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">

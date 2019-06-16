@@ -15,11 +15,6 @@
                             <param id="1" name="Precision">3</param>
                             <param id="2" name="Interpolation">0</param>
                         </action>
-                        <action id="15" name="Add client input value" sid="430394770610274" type="Multiplayer">
-                            <param id="0" name="Tag">&quot;inputs2&quot;</param>
-                            <param id="1" name="Precision">3</param>
-                            <param id="2" name="Interpolation">0</param>
-                        </action>
                         <action id="11" name="Sync object" sid="165278270996814" type="Multiplayer">
                             <param id="0" name="Object">Player</param>
                             <param id="1" name="Data">3</param>
@@ -32,6 +27,27 @@
                             <param id="2" name="Precision">3</param>
                             <param id="3" name="Interpolation">0</param>
                             <param id="4" name="Client value tag">&quot;inputs&quot;</param>
+                        </action>
+                        <action id="12" name="Sync instance variable" sid="184526533897012" type="Multiplayer">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Instance variable">Player|health</param>
+                            <param id="2" name="Precision">3</param>
+                            <param id="3" name="Interpolation">0</param>
+                            <param id="4" name="Client value tag">&quot;&quot;</param>
+                        </action>
+                        <action id="12" name="Sync instance variable" sid="590024205881985" type="Multiplayer">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Instance variable">Player|kills</param>
+                            <param id="2" name="Precision">2</param>
+                            <param id="3" name="Interpolation">0</param>
+                            <param id="4" name="Client value tag">&quot;&quot;</param>
+                        </action>
+                        <action id="12" name="Sync instance variable" sid="561737017229013" type="Multiplayer">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Instance variable">Player|deaths</param>
+                            <param id="2" name="Precision">2</param>
+                            <param id="3" name="Interpolation">0</param>
+                            <param id="4" name="Client value tag">&quot;&quot;</param>
                         </action>
                         <action id="12" name="Sync instance variable" sid="715244271241009" type="Multiplayer">
                             <param id="0" name="Object">Player</param>
@@ -354,8 +370,8 @@
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="916554468437182" type="Player">
                                     <param id="0" name="Instance variable">multiplayer_id</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Multiplayer.PeerID</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">Multiplayer.MyID</param>
                                 </condition>
                                 <condition id="-11" name="For Each" sid="714053756542592" type="System">
                                     <param id="0" name="Object">Player</param>

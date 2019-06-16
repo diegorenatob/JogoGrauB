@@ -275,10 +275,11 @@
             <instance-variables>
                 <instance-variable name="multiplayer_id" sid="842420400641366" type="string" />
                 <instance-variable name="inputs" sid="664466335345760" type="number" />
-                <instance-variable name="inputs2" sid="572110175557239" type="number" />
-                <instance-variable name="inputs3" sid="511505621110980" type="number" />
                 <instance-variable name="arma1" sid="514894680303843" type="number" />
                 <instance-variable name="animacao" sid="744631583247708" type="string" />
+                <instance-variable name="health" sid="518020376703089" type="number" />
+                <instance-variable name="kills" sid="348001706138388" type="number" />
+                <instance-variable name="deaths" sid="822603816670158" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="804246396371401">
