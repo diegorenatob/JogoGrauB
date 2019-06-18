@@ -386,7 +386,7 @@
                             <actions>
                                 <action id="-10" name="Set value" sid="499347477634178" type="Player">
                                     <param id="0" name="Instance variable">inputs</param>
-                                    <param id="1" name="Value">Multiplayer.PeerState(Multiplayer.PeerID,&quot;inputs&quot;)</param>
+                                    <param id="1" name="Value">Multiplayer.PeerState(Player.multiplayer_id,&quot;inputs&quot;)</param>
                                 </action>
                             </actions>
                             <sub-events>

@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">game</layout>
-        <layout order="3">login</layout>
-        <event-sheet active="1" order="1">ev_game</event-sheet>
+        <layout active="1" order="3">login</layout>
+        <event-sheet order="1">ev_game</event-sheet>
         <event-sheet order="2">Globais</event-sheet>
         <event-sheet order="4">ev_login</event-sheet>
     </open-tabs>
