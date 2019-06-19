@@ -482,7 +482,6 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <variable constant="0" name="FiringPlayerID" sid="941024710949367" static="0" type="text"></variable>
                         <event-group description="" sid="492133607823752" title="colisao">
                             <sub-events>
                                 <event-block sid="384152028685133">
@@ -802,12 +801,20 @@
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-10" name="Set value" sid="485300097998931" type="Player">
-                                            <param id="0" name="Instance variable">inputs</param>
-                                            <param id="1" name="Value">setbit(Self.inputs,4,1)</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="933237786737877">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="290010406841526" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="485300097998931" type="Player">
+                                                    <param id="0" name="Instance variable">inputs</param>
+                                                    <param id="1" name="Value">setbit(Self.inputs,4,1)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="832427334160510">
                                     <conditions>
