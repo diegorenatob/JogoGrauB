@@ -310,7 +310,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="785285576513451">
+                                <event-block sid="785285576513451">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="300805919341953" type="Keyboard">
                                             <param id="0" name="Key">32</param>
@@ -322,24 +322,13 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Spawn another object" sid="368425795190426" type="Player">
-                                            <param id="0" name="Object">bullet</param>
-                                            <param id="1" name="Layer">&quot;game&quot;</param>
-                                            <param id="2" name="Image point">&quot;fire&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="546355192960845" type="bullet">
-                                            <param id="0" name="Instance variable">multiplayer_id</param>
-                                            <param id="1" name="Value">Player.multiplayer_id</param>
-                                        </action>
-                                        <action id="0" name="Play" sid="750837807890639" type="Audio">
-                                            <param id="0" name="Audio file">pistol</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">25</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        <action id="0" name="Call function" sid="956974088299606" type="Function">
+                                            <param id="0" name="Name">&quot;BulletCreation&quot;</param>
+                                            <param id="1" name="Parameter {n}">Player.multiplayer_id</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="950885496242311">
+                                <event-block disabled="1" sid="950885496242311">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="262900885075118" type="Keyboard">
                                             <param id="0" name="Key">32</param>
@@ -352,7 +341,7 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block sid="965685330072610">
+                                        <event-block disabled="1" sid="965685330072610">
                                             <conditions>
                                                 <condition id="-4" name="Trigger once while true" sid="116182188617804" type="System" />
                                             </conditions>
@@ -365,7 +354,7 @@
                                         </event-block>
                                     </sub-events>
                                 </event-block>
-                                <event-block sid="761938795736650">
+                                <event-block disabled="1" sid="761938795736650">
                                     <conditions>
                                         <condition id="-22" name="Else" sid="467888838556177" type="System" />
                                     </conditions>
@@ -452,9 +441,9 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="319271758367094">
+                                <event-block sid="196795360504015">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="862199711745185" type="System">
+                                        <condition id="-8" name="Compare two values" sid="781197406525691" type="System">
                                             <param id="0" name="First value">getbit(Player.inputs,4)</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Second value">1</param>
@@ -462,19 +451,14 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block sid="527429203080664">
+                                        <event-block sid="844605344512906">
                                             <conditions>
-                                                <condition id="-4" name="Trigger once while true" sid="559475605250604" type="System" />
+                                                <condition id="-4" name="Trigger once while true" sid="265695630512468" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="0" name="Spawn another object" sid="265369744514942" type="Player">
-                                                    <param id="0" name="Object">bullet</param>
-                                                    <param id="1" name="Layer">&quot;game&quot;</param>
-                                                    <param id="2" name="Image point">&quot;fire&quot;</param>
-                                                </action>
-                                                <action id="-10" name="Set value" sid="300038067734443" type="bullet">
-                                                    <param id="0" name="Instance variable">multiplayer_id</param>
-                                                    <param id="1" name="Value">Player.multiplayer_id</param>
+                                                <action id="0" name="Call function" sid="789587586729920" type="Function">
+                                                    <param id="0" name="Name">&quot;BulletCreation&quot;</param>
+                                                    <param id="1" name="Parameter {n}">Player.multiplayer_id</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -972,52 +956,29 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="205313102662810">
+                <event-block sid="421989028883039">
                     <conditions>
-                        <condition id="-11" name="For Each" sid="664350476314065" type="System">
-                            <param id="0" name="Object">Player</param>
+                        <condition id="0" name="On function" sid="672821538688866" type="Function">
+                            <param id="0" name="Name">&quot;BulletCreation&quot;</param>
                         </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="336933570887946">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="342656338304385" type="System">
-                                    <param id="0" name="First value">getbit(Player.inputs,4)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="249149091819327">
-                                    <conditions>
-                                        <condition id="-4" name="Trigger once while true" sid="203637321602672" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Spawn another object" sid="180694910031451" type="Player">
-                                            <param id="0" name="Object">bullet</param>
-                                            <param id="1" name="Layer">&quot;game&quot;</param>
-                                            <param id="2" name="Image point">&quot;fire&quot;</param>
-                                        </action>
-                                        <action id="11" name="Set collisions enabled" sid="785510459907967" type="bullet">
-                                            <param id="0" name="Collisions">1</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="407927148629932" type="bullet">
-                                            <param id="0" name="Instance variable">multiplayer_id</param>
-                                            <param id="1" name="Value">Player.multiplayer_id</param>
-                                        </action>
-                                        <action id="0" name="Play" sid="240069684701675" type="Audio">
-                                            <param id="0" name="Audio file">pistol</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">25</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="230876693397027" type="Player">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">&quot;fire&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="258206028291091" type="bullet">
+                            <param id="0" name="Instance variable">multiplayer_id</param>
+                            <param id="1" name="Value">Function.Param(0)</param>
+                        </action>
+                        <action id="0" name="Play" sid="971555024853956" type="Audio">
+                            <param id="0" name="Audio file">pistol</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">25</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
