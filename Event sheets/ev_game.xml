@@ -222,8 +222,8 @@
                         <action id="-3" name="Create object" sid="633175572710431" type="System">
                             <param id="0" name="Object to create">Player</param>
                             <param id="1" name="Layer">&quot;game&quot;</param>
-                            <param id="2" name="X">50</param>
-                            <param id="3" name="Y">50</param>
+                            <param id="2" name="X">random(50, LayoutWidth - 50)</param>
+                            <param id="3" name="Y">random(50, LayoutHeight - 50)</param>
                         </action>
                         <action id="-10" name="Set value" sid="435316607191495" type="Player">
                             <param id="0" name="Instance variable">multiplayer_id</param>
@@ -238,37 +238,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-group description="" sid="492133607823752" title="colisao">
-                    <sub-events>
-                        <event-block sid="384152028685133">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="305084168200714" type="bullet">
-                                    <param id="0" name="Object">Player</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="657907718010290">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="609990413413508" type="bullet">
-                                            <param id="0" name="Instance variable">multiplayer_id</param>
-                                            <param id="1" name="Comparison">1</param>
-                                            <param id="2" name="Value">Player.multiplayer_id</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="358033510325022" type="bullet" />
-                                        <action id="0" name="Spawn another object" sid="491077097994407" type="Player">
-                                            <param id="0" name="Object">sangue</param>
-                                            <param id="1" name="Layer">&quot;game&quot;</param>
-                                            <param id="2" name="Image point">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
-                </event-group>
                 <event-group description="" sid="201676181526336" title="Controls">
                     <sub-events>
                         <event-block sid="572495685692631">
@@ -341,7 +310,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="785285576513451">
+                                <event-block disabled="1" sid="785285576513451">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="300805919341953" type="Keyboard">
                                             <param id="0" name="Key">32</param>
@@ -367,6 +336,43 @@
                                             <param id="2" name="Loop">0</param>
                                             <param id="3" name="Volume">25</param>
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="950885496242311">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="262900885075118" type="Keyboard">
+                                            <param id="0" name="Key">32</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="658159472073401" type="Player">
+                                            <param id="0" name="Instance variable">arma1</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="965685330072610">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="116182188617804" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="875513351486635" type="Player">
+                                                    <param id="0" name="Instance variable">inputs</param>
+                                                    <param id="1" name="Value">setbit(Self.inputs,4,1)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="761938795736650">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="467888838556177" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="918538863482931" type="Player">
+                                            <param id="0" name="Instance variable">inputs</param>
+                                            <param id="1" name="Value">setbit(Self.inputs,4,0)</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -446,7 +452,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="319271758367094">
+                                <event-block disabled="1" sid="319271758367094">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="862199711745185" type="System">
                                             <param id="0" name="First value">getbit(Player.inputs,4)</param>
@@ -475,6 +481,107 @@
                                     </sub-events>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                        <variable constant="0" name="FiringPlayerID" sid="941024710949367" static="0" type="text"></variable>
+                        <event-group description="" sid="492133607823752" title="colisao">
+                            <sub-events>
+                                <event-block sid="384152028685133">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="305084168200714" type="bullet">
+                                            <param id="0" name="Object">Player</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="657907718010290">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="609990413413508" type="bullet">
+                                                    <param id="0" name="Instance variable">multiplayer_id</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Value">Player.multiplayer_id</param>
+                                                </condition>
+                                                <condition id="-11" name="For Each" sid="401688911736910" type="System">
+                                                    <param id="0" name="Object">Player</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="358033510325022" type="bullet" />
+                                                <action id="0" name="Spawn another object" sid="491077097994407" type="Player">
+                                                    <param id="0" name="Object">sangue</param>
+                                                    <param id="1" name="Layer">&quot;game&quot;</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-12" name="Subtract from" sid="176082718656961" type="Player">
+                                                    <param id="0" name="Instance variable">health</param>
+                                                    <param id="1" name="Value">10</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="502142278755409" type="Player">
+                                                    <param id="0" name="Instance variable">lasthitbyplayerid</param>
+                                                    <param id="1" name="Value">bullet.multiplayer_id</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-block sid="436917082364205">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="606963648794917" type="Player">
+                                    <param id="0" name="Instance variable">health</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="535604339408614" type="Player">
+                                    <param id="0" name="X">random(50, LayoutWidth - 50)</param>
+                                    <param id="1" name="Y">random(50, LayoutHeight - 50)</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="719921197186376" type="Player">
+                                    <param id="0" name="Instance variable">health</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="995903894859346" type="Player">
+                                    <param id="0" name="Instance variable">deaths</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="217558156572022">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="909899498970996" type="Player">
+                                            <param id="0" name="Instance variable">multiplayer_id</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">Player.lasthitbyplayerid</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="414329266013330" type="Function">
+                                            <param id="0" name="Name">&quot;AddtoKills&quot;</param>
+                                            <param id="1" name="Parameter {n}">Player.lasthitbyplayerid</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="347557529653093">
+                            <conditions>
+                                <condition id="0" name="On function" sid="871479112546678" type="Function">
+                                    <param id="0" name="Name">&quot;AddtoKills&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="376833559961210" type="Player">
+                                    <param id="0" name="Instance variable">multiplayer_id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Function.Param(0)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="460359415555586" type="Player">
+                                    <param id="0" name="Instance variable">kills</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
@@ -695,20 +802,12 @@
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
-                                    <sub-events>
-                                        <event-block sid="277158115080512">
-                                            <conditions>
-                                                <condition id="-4" name="Trigger once while true" sid="115927518976478" type="System" />
-                                            </conditions>
-                                            <actions>
-                                                <action id="-10" name="Set value" sid="485300097998931" type="Player">
-                                                    <param id="0" name="Instance variable">inputs</param>
-                                                    <param id="1" name="Value">setbit(Self.inputs,4,1)</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="485300097998931" type="Player">
+                                            <param id="0" name="Instance variable">inputs</param>
+                                            <param id="1" name="Value">setbit(Self.inputs,4,1)</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                                 <event-block sid="832427334160510">
                                     <conditions>
@@ -849,7 +948,7 @@
                             <param id="1" name="Y">Player.Y - 40</param>
                         </action>
                         <action id="0" name="Set text" sid="975047307025984" type="txt_nick">
-                            <param id="0" name="Text">Multiplayer.PeerAliasFromID(Player.multiplayer_id)</param>
+                            <param id="0" name="Text">Multiplayer.PeerAliasFromID(Player.multiplayer_id) &amp; &quot; (&quot; &amp; Player.health &amp; &quot;%)&quot; &amp; newline &amp; Player.kills &amp; &quot;Kills, &quot; &amp; Player.deaths &amp; &quot;Deaths&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -865,6 +964,53 @@
                             <param id="1" name="From">0</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block sid="205313102662810">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="664350476314065" type="System">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="336933570887946">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="342656338304385" type="System">
+                                    <param id="0" name="First value">getbit(Player.inputs,4)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="249149091819327">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="203637321602672" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="180694910031451" type="Player">
+                                            <param id="0" name="Object">bullet</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="Image point">&quot;fire&quot;</param>
+                                        </action>
+                                        <action id="11" name="Set collisions enabled" sid="785510459907967" type="bullet">
+                                            <param id="0" name="Collisions">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="407927148629932" type="bullet">
+                                            <param id="0" name="Instance variable">multiplayer_id</param>
+                                            <param id="1" name="Value">Player.multiplayer_id</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="240069684701675" type="Audio">
+                                            <param id="0" name="Audio file">pistol</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">25</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

@@ -11,6 +11,7 @@
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Multiplayer" version="1">Multiplayer</plugin>
@@ -280,6 +281,8 @@
                 <instance-variable name="health" sid="518020376703089" type="number" />
                 <instance-variable name="kills" sid="348001706138388" type="number" />
                 <instance-variable name="deaths" sid="822603816670158" type="number" />
+                <instance-variable name="FirstShot" sid="986803578574147" type="boolean" />
+                <instance-variable name="lasthitbyplayerid" sid="554465966372744" type="string" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="804246396371401">
@@ -464,6 +467,9 @@
         <object-type name="Audio" sid="125002856497830">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="Function" sid="792440250239755">
+            <plugin id="Function" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -493,6 +499,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Function" uid="101" />
     </global-instances>
     <sounds-folder>
         <file name="idiotsinspace.ogg" />

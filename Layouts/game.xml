@@ -2631,6 +2631,8 @@
                         <health>100</health>
                         <kills>0</kills>
                         <deaths>0</deaths>
+                        <FirstShot>true</FirstShot>
+                        <lasthitbyplayerid></lasthitbyplayerid>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -2684,7 +2686,7 @@
                         <y>223.5</y>
                         <z>0</z>
                         <width>119</width>
-                        <height>23</height>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
