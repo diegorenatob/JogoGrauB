@@ -322,9 +322,20 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Call function" sid="956974088299606" type="Function">
-                                            <param id="0" name="Name">&quot;BulletCreation&quot;</param>
-                                            <param id="1" name="Parameter {n}">Player.multiplayer_id</param>
+                                        <action id="0" name="Spawn another object" sid="146156570772453" type="Player">
+                                            <param id="0" name="Object">bullet</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="Image point">&quot;fire&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="335784425152118" type="bullet">
+                                            <param id="0" name="Instance variable">multiplayer_id</param>
+                                            <param id="1" name="Value">Player.multiplayer_id</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="716429127711602" type="Audio">
+                                            <param id="0" name="Audio file">pistol</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">25</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -456,9 +467,20 @@
                                                 <condition id="-4" name="Trigger once while true" sid="265695630512468" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="0" name="Call function" sid="789587586729920" type="Function">
-                                                    <param id="0" name="Name">&quot;BulletCreation&quot;</param>
-                                                    <param id="1" name="Parameter {n}">Player.multiplayer_id</param>
+                                                <action id="0" name="Spawn another object" sid="195653560786180" type="Player">
+                                                    <param id="0" name="Object">bullet</param>
+                                                    <param id="1" name="Layer">&quot;game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;fire&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="695057154159783" type="bullet">
+                                                    <param id="0" name="Instance variable">multiplayer_id</param>
+                                                    <param id="1" name="Value">Player.multiplayer_id</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="845900578442880" type="Audio">
+                                                    <param id="0" name="Audio file">pistol</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">25</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -953,30 +975,6 @@
                         <action id="4" name="Set animation" sid="276696829639043" type="Player">
                             <param id="0" name="Animation">Player.animacao</param>
                             <param id="1" name="From">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="421989028883039">
-                    <conditions>
-                        <condition id="0" name="On function" sid="672821538688866" type="Function">
-                            <param id="0" name="Name">&quot;BulletCreation&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Spawn another object" sid="230876693397027" type="Player">
-                            <param id="0" name="Object">bullet</param>
-                            <param id="1" name="Layer">&quot;game&quot;</param>
-                            <param id="2" name="Image point">&quot;fire&quot;</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="258206028291091" type="bullet">
-                            <param id="0" name="Instance variable">multiplayer_id</param>
-                            <param id="1" name="Value">Function.Param(0)</param>
-                        </action>
-                        <action id="0" name="Play" sid="971555024853956" type="Audio">
-                            <param id="0" name="Audio file">pistol</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">25</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
